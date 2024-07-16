@@ -5,7 +5,7 @@
   "devDependencies": {
     "@types/co-body": "^0.0.3",
     "@types/node": "12.x",
-    "@vtex/api": "6.44.0",
+    "@vtex/api": "6.47.0",
     "@vtex/tsconfig": "^0.5.6",
     "typescript": "3.9.7"
   },

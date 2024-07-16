@@ -1,19 +1,25 @@
 {
   "memory": 128,
   "ttl": 10,
-  "timeout": 2,
+  "timeout": 10,
   "minReplicas": 2,
   "maxReplicas": 10,
   "workers": 4,
   "events": {
-    "example": {
+    "liveUsersUpdate": {
       "sender": "vtex.events-example",
-      "keys": ["send-event"]
+      "keys": [
+        "send-event"
+      ]
     }
   },
   "routes": {
     "hcheck": {
       "path": "/_v/app/events-example/hcheck",
+      "public": true
+    },
+    "analytics": {
+      "path": "/_v/app/analytics/realTime",
       "public": true
     }
   }
